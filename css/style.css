@@ -10,7 +10,23 @@ header img{
 .search-field{
   width: 500px;
 }
-
+/* Search Button Style  */
+.search-btn{  
+  background-color: #4CAF50;
+  border: 0;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 10px 32px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin: 1px 0 !important;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%),
+   0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+}
 
 /* Products style  */
 #all-products {
@@ -88,6 +104,14 @@ header img{
     flex-direction: column;
     width: 200px;
     height: 50px;
+  }
+
+  .search-btn {
+    width: 100px;
+    border: 0;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
   }
   #all-products {
     display: grid;
