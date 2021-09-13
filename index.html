@@ -19,24 +19,32 @@
 
 <body>
   <header>
-    <h1 class="text-center m-5 text-color" >Student Ecomerce</h1>
-  </header>
-  <main class="main">
-    <nav class="navbar navbar-light bg-light mx-auto my-5 w-50">
-      <div class="container-fluid">
-        <div class="d-flex mx-auto">
-          <input class="form-control me-2" type="search" placeholder="Search Product" aria-label="Search">
+    <!-- Banner Image  -->
+    <img height="300px" class="w-100" src="images/saver.jpg" alt="">
+      <!-- search bar -->
+      <div class="m-3">
+        <div class="d-flex w-25 mx-auto">
+          <input class="form-control input-field" type="search" placeholder="Search Product" aria-label="Search">
           <button class="search-btn" type="submit">Search</button>
         </div>
       </div>
-    </nav>
+  </header>
+  <main class="main container-fluid">
+    <!------------------------- 
+      all products and chart 
+    -------------------------->
     <div class="row">
+      <!-----------
+         All Products  
+      ------------->
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
-          
         </div>
       </div>
-      <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
+      <!-------------
+         chart Box 
+      --------------->
+      <div class="col-md-3 col-lg-3 col-sm-5 cart-main w-25">
         <div class="cart" id="my-cart">
           <table class="table">
             <thead>
