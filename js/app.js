@@ -237,8 +237,8 @@ const showProducts = (products) => {
       </div>
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
-      <p class="text-danger">Rating: ${product.rating.rate}</p>
-      <p class="text-danger">${product.rating.count} Peoples Rated This</p>
+      <p class="text-warning">Rating: ${product.rating.rate}</p>
+      <p class="text-warning">${product.rating.count} Peoples Rated This</p>
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id}, ${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
@@ -246,6 +246,7 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+// Products count and add to cart 
 let count = 1;
 const addToCart = (id, price) => {
   count = count + 1;
@@ -254,7 +255,7 @@ const addToCart = (id, price) => {
   updateTaxAndCharge();
   document.getElementById("total-Products").innerText = count;
 };
-
+// Get input value throw HTML id 
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
@@ -270,7 +271,7 @@ const updatePrice = (id, value) => {
   document.getElementById(id).innerText = totalUpdatePrice;
 };
 
-// set innerText function
+// set innerText of cart function
 const setInnerText = (id, value) => {
   const fixedValue = value.toFixed(2)
   document.getElementById(id).innerText = fixedValue;
@@ -297,12 +298,10 @@ const updateTaxAndCharge = () => {
 
 //grandTotal update function
 const updateTotal = () => {
-  
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
-  console.log(grandTotal)
-  setInnerText("total", grandTotal)
+    setInnerText("total", grandTotal)
   // document.getElementById("total").innerText = grandTotal;
 };
 loadProducts();
