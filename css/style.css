@@ -54,6 +54,7 @@ body {
 
 /* Shopping cart Style  */
 .cart {
+  background-image: radial-gradient(circle 1224px at 10.6% 8.8%, rgba(255, 255, 255, 1) 0%, rgba(153, 202, 251, 1) 100.2%);
   width: 350px;
   border: 1px solid green;
   padding: 10px;
@@ -64,6 +65,7 @@ body {
 }
 .cart-main {
   padding-right: 30px;
+  
 }
 
 /* Responsive for tablet Devices */
