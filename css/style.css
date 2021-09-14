@@ -40,7 +40,7 @@ body {
   margin: 10px;
   padding: 10px;
   transition: 0.6s;
-  background-image: radial-gradient(circle 1224px at 10.6% 8.8%, rgba(255, 255, 255, 1) 0%, rgba(153, 202, 251, 1) 100.2%);
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
