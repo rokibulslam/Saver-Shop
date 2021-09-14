@@ -2,7 +2,9 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
-
+.header-text{
+  color: #00ff15;
+}
 .search-field{
   width: 500px;
 }
