@@ -2,10 +2,6 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
-header img{
-  width: 100%;
-  height: 300px;
-}
 
 .search-field{
   width: 500px;
@@ -70,10 +66,7 @@ header img{
 
 /* Responsive for tablet Devices */
 @media only screen and (max-width: 768px) {
-  header img {
-    width: 100%;
-    height: 400px;
-  }
+
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -95,10 +88,6 @@ header img{
 
 /* Responsive for Mobile devices */
 @media only screen and (max-width: 468px) {
-  header img {
-    width: 100%;
-    height: 300px;
-  }
   .search-field {
     display: flex;
     flex-direction: column;
